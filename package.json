@@ -1,5 +1,5 @@
 {
-  "name": "blaze",
+  "name": "blaze-ui",
   "author": "igsnow",
   "version": "0.1.0",
   "main": "lib/blaze.common.js",
