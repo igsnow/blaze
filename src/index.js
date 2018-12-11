@@ -1,4 +1,4 @@
-import BlButton  from './button'
+import BlButton from '../packages/button/index'
 
 const components = [BlButton]
 const install = function (Vue) {

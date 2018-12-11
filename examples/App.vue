@@ -1,17 +1,17 @@
 <template>
     <div id="app">
         <!--<img alt="Vue logo" src="./assets/logo.png">-->
-        <HelloBlaze msg="Welcome to Blaze"/>
+        <HiBlaze msg="Welcome to Blaze"/>
     </div>
 </template>
 
 <script>
-    import HelloBlaze from './components/HelloBlaze.vue'
+    import HiBlaze from './components/HiBlaze.vue'
 
     export default {
         name: 'app',
         components: {
-            HelloBlaze
+            HiBlaze
         }
     }
 </script>

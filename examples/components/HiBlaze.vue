@@ -1,13 +1,13 @@
 <template>
     <div>
         <h1>{{ msg }}</h1>
-        <BlButton></BlButton>
+        <bl-button></bl-button>
     </div>
 </template>
 
 <script>
     export default {
-        name: 'HelloBlaze',
+        name: 'HiBlaze',
         props: {
             msg: String
         }
