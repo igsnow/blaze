@@ -12,5 +12,13 @@
     }
 </script>
 <style rel="stylesheet/stylus" lang="stylus" scoped>
-    @import "~@@/styles/components/button.styl"
+    @import "~@@/stylus/variable.styl"
+    .bl-button
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        line-height 50px;
+        font-size: $font-size-medium
+        color: $btn-color;
+        background: $btn-bgc;
 </style>
