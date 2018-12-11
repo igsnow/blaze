@@ -1,7 +1,7 @@
 {
   "name": "blaze-ui",
   "author": "igsnow",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A compact JavaScript UI Library Based on Vue",
   "main": "lib/blaze.common.js",
   "scripts": {
