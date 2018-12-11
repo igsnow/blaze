@@ -15,16 +15,16 @@ module.exports = {
     },
     chainWebpack: config => {
         // vue默认@指向src目录，这里要修正为examples，另外新增一个~指向packages
-        // config.resolve.alias
-        //     .set('@', resolve('examples'))
-        //     .set('~', resolve('packages'))
-        //     .set('@@', resolve('src/styles/components'))
-        // packages和examples目录需要加入编译
+        config.resolve.alias
+            .set('@', resolve('examples'))
+            .set('~', resolve('packages'))
+            .set('@@', resolve('src'))
+        // packages和src是新增目录，需要加入webpack编译
         config.module
             .rule('js')
             .include.add(/packages/)
             .end()
-            .include.add(/examples/)
+            .include.add(/src/)
             .end()
             .use('babel')
             .loader('babel-loader')

@@ -12,6 +12,5 @@
     }
 </script>
 <style rel="stylesheet/stylus" lang="stylus" scoped>
-    /*@import "@@/button.styl";*/
-    @import "../../../src/styles/components/button.styl"
+    @import "~@@/styles/components/button.styl"
 </style>
