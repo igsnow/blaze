@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1>{{ msg }}</h1>
-        <bl-button></bl-button>
+        <h2>{{ msg }}</h2>
+        <bl-button>agree</bl-button>
     </div>
 </template>
 
