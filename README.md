@@ -5,4 +5,3 @@ npm install
 
 npm run serve
 
-配置github私钥
