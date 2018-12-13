@@ -1,7 +1,13 @@
 <template>
     <div>
         <h2>{{ msg }}</h2>
-        <bl-button @click="handleClick">按钮</bl-button>
+        <p>
+            <bl-button @click="handleClick">按钮</bl-button>
+        </p>
+        <p>
+            <bl-slide></bl-slide>
+        </p>
+
     </div>
 </template>
 

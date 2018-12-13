@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <!--<img alt="Vue logo" src="./assets/logo.png">-->
-        <HiBlaze msg="Welcome to Blaze"/>
+        <HiBlaze msg="Blaze"/>
     </div>
 </template>
 
