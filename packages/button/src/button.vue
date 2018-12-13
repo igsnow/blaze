@@ -21,23 +21,11 @@
                 type: Boolean,
                 default: false
             },
-            disabled: {
-                type: Boolean,
-                default: false
-            },
             inline: {
                 type: Boolean,
                 default: false
             },
-            primary: {
-                type: Boolean,
-                default: false
-            },
-            outline: {
-                type: Boolean,
-                default: false
-            },
-            light: {
+            disabled: {
                 type: Boolean,
                 default: false
             },
@@ -50,12 +38,8 @@
             btnClass() {
                 return {
                     'bl-btn_active': this.active,
-                    'bl-btn_disabled': this.disabled,
                     'bl-btn-inline': this.inline,
-                    'bl-btn-primary': this.primary,
-                    'bl-btn-outline': this.outline,
-                    'bl-btn-outline-primary': this.outline && this.primary,
-                    'bl-btn-light': this.light
+                    'bl-btn_disabled': this.disabled
                 }
             }
         },
@@ -94,7 +78,7 @@
         border-radius: 2px
         box-sizing: border-box
         -webkit-tap-highlight-color: transparent
-        btn-active($btn-active-bgc)
+        btn-active($btn-bgc-active)
 
         > i
             display: inline-block
@@ -113,26 +97,6 @@
         > i
             margin-right: 2px
             transform: scale(1.14)
-
-    .bl-btn-primary
-        color: $btn-primary-color
-        background: $btn-primary-bgc
-        btn-active($btn-primary-active-bgc)
-
-    .bl-btn-light
-        color: $btn-light-color
-        background: $btn-light-bgc
-        btn-active($btn-light-active-bgc)
-
-    .bl-btn-outline
-        color: $btn-outline-color
-        background: $btn-outline-bgc
-        btn-active($btn-outline-active-bgc, $btn-outline-active-bdc)
-
-    .bl-btn-outline-primary
-        color: $btn-outline-primary-color
-        background: $btn-outline-primary-bgc
-        btn-active($btn-outline-primary-active-bgc, $btn-outline-primary-active-bdc)
 
     .bl-btn_disabled
         color: $btn-disabled-color
