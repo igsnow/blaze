@@ -45,14 +45,17 @@
                 this.startMarginLeft = this.marginLeft
             },
             handleTouchMove(e) {
+                //滑到最左边边界条件
+                if (this.marginLeft < -130) {
+                    return
+                }
                 this.endPos = e.touches[0].clientX
                 this.distanceX = this.startPos - this.endPos
                 this.marginLeft = this.startMarginLeft - this.distanceX
-                if (this.marginLeft < -130) return
-                console.log(this.marginLeft)
+                window.console.log(this.marginLeft)
             },
             handleTouchEnd() {
-                if (this.marginLeft > -60) {
+                if (this.marginLeft > -80) {
                     this.marginLeft = 0       //组件折置
                 } else {
                     this.marginLeft = -130    //组件展开，滑到最左边
@@ -78,12 +81,10 @@
             /**将左侧的信息栏flex属性设置为0，不会随空间变化进行缩放*/
             flex-shrink: 0
 
-
         .slide-read
             display: flex
             width: 80px
             background: $color-light-grey-s
-
 
         .slide-del
             display: flex
@@ -94,11 +95,9 @@
             & > span
                 /**将文字容器宽度设置为0，容器中的文字可以缩放*/
                 width: 0
-                text-align: center
+                margin-left: 10%
                 line-height: 50px
-                margin-left: 5%
                 white-space: nowrap
                 color: $color-white
-
 
 </style>
