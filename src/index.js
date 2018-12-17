@@ -1,7 +1,8 @@
 import BlButton from '../packages/button/index'
 import BlSlide from '../packages/slide/index'
+import BlZoom from '../packages/zoom/index'
 
-const components = [BlButton, BlSlide]
+const components = [BlButton, BlSlide, BlZoom]
 const install = function (Vue) {
     if (install.installed) return;
     components.map(component => {
@@ -15,5 +16,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
     install,
     BlButton,
-    BlSlide
+    BlSlide,
+    BlZoom
 }

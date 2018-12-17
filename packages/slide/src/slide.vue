@@ -65,7 +65,7 @@
     }
 </script>
 
-<style rel="stylesheet/stylus" lang="stylus">
+<style rel="stylesheet/stylus" lang="stylus" scoped>
     @import "~@@/stylus/variable.styl"
     .bl-slide
         display: flex
