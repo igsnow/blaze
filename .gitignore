@@ -21,4 +21,4 @@ yarn-error.log*
 *.sw*
 
 # Repair shell commands for git username and email
-email.sh
+*.sh
