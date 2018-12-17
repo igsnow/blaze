@@ -19,6 +19,3 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
-
-# Repair shell commands for git username and email
-*.sh
