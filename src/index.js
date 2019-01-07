@@ -1,8 +1,8 @@
 import BlButton from '../packages/button/index'
 import BlSlide from '../packages/slide/index'
-import BlZoom from '../packages/zoom/index'
+import BlContextMenu from '../packages/contextMenu/index'
 
-const components = [BlButton, BlSlide, BlZoom]
+const components = [BlButton, BlSlide, BlContextMenu]
 const install = function (Vue) {
     if (install.installed) return;
     components.map(component => {
@@ -17,5 +17,5 @@ export default {
     install,
     BlButton,
     BlSlide,
-    BlZoom
+    BlContextMenu
 }

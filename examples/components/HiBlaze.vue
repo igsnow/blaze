@@ -8,12 +8,10 @@
             <bl-slide></bl-slide>
         </p>
         <p>
-            <bl-zoom
-                    src="http://img.zcool.cn/community/01f9ea56e282836ac72531cbe0233b.jpg@2o.jpg"
-                    width="450" height="250"
-                    bigsrc="http://img.zcool.cn/community/01f9ea56e282836ac72531cbe0233b.jpg@2o.jpg"
-                    :configs="configs">
-            </bl-zoom>
+            <bl-context-menu
+                    :title="contextMenuTitle"
+                    :list="contextMenuList"
+            ></bl-context-menu>
         </p>
     </div>
 </template>
@@ -26,14 +24,8 @@
         },
         data() {
             return {
-                configs: {
-                    width: 650,
-                    height: 350,
-                    maskWidth: 100,
-                    maskHeight: 100,
-                    maskColor: 'red',
-                    maskOpacity: 0.2
-                }
+                contextMenuTitle: '右键点击',
+                contextMenuList: ['右击刷新', '右击关闭', '右击关闭所有']
             }
         },
         methods: {
