@@ -2,7 +2,11 @@
     <div>
         <h2>{{ msg }}</h2>
         <p>
-            <bl-button @click="handleClick">按钮</bl-button>
+            <bl-button
+                    @click="handleClick"
+            >
+                按钮
+            </bl-button>
         </p>
         <p>
             <bl-slide></bl-slide>

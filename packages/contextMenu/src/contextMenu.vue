@@ -1,6 +1,8 @@
 <template>
     <div class="bl-context-menu">
-        <bl-button>
+        <bl-button
+                :size="size"
+        >
             {{title}}
         </bl-button>
         <ul>
@@ -16,6 +18,10 @@
     export default {
         name: COMPONENT_NAME,
         props: {
+            size: {
+                type: String,
+                default: 'mini'
+            },
             title: {
                 type: String,
                 default: '右击'

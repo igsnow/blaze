@@ -2,6 +2,7 @@
     <button
             class="bl-btn"
             :type="type"
+            :size="size"
             :class="btnClass"
             @click="handleClick">
         <i :class="icon" v-if="icon"></i>
@@ -32,6 +33,10 @@
             type: {
                 type: String,
                 default: 'button'
+            },
+            size: {
+                type: String,
+                default: 'large'
             }
         },
         computed: {
@@ -39,7 +44,10 @@
                 return {
                     'bl-btn_active': this.active,
                     'bl-btn-inline': this.inline,
-                    'bl-btn_disabled': this.disabled
+                    'bl-btn_disabled': this.disabled,
+                    'bl-btn_medium': this.size == 'medium',
+                    'bl-btn_small': this.size == 'small',
+                    'bl-btn_mini': this.size == 'mini'
                 }
             }
         },
@@ -57,6 +65,7 @@
 </script>
 <style rel="stylesheet/stylus" lang="stylus" scoped>
     @import "~@@/stylus/variable.styl"
+
     btn-active($bg)
         &.bl-btn_active, &:active
             background: $bg
@@ -102,4 +111,13 @@
         color: $btn-disabled-color
         background: $btn-disabled-bgc
         btn-active($btn-disabled-bgc, $btn-disabled-bdc)
+
+    .bl-btn_medium
+        padding: 14px 13px
+    .bl-btn_small
+        padding: 11px 10px
+    .bl-btn_mini
+        padding: 8px 7px
+
+
 </style>
