@@ -67,8 +67,8 @@
     @import "~@@/stylus/variable.styl"
 
     btn-active($bg)
-        &.bl-btn_active, &:active
-            background: $bg
+    &.bl-btn_active, &:active
+        background: $bg
 
     .bl-btn
         display: block
@@ -114,8 +114,10 @@
 
     .bl-btn_medium
         padding: 14px 13px
+
     .bl-btn_small
         padding: 11px 10px
+
     .bl-btn_mini
         padding: 8px 7px
 

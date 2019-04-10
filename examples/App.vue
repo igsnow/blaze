@@ -1,17 +1,16 @@
 <template>
     <div id="app">
-        <!--<img alt="Vue logo" src="./assets/logo.png">-->
-        <HiBlaze msg="Blaze"/>
+        <index/>
     </div>
 </template>
 
 <script>
-    import HiBlaze from './components/HiBlaze.vue'
+    import index from './pages/index'
 
     export default {
         name: 'app',
         components: {
-            HiBlaze
+            index
         }
     }
 </script>
