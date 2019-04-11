@@ -5,6 +5,19 @@ function resolve(dir) {
 }
 
 module.exports = {
+    // 配置px2rem
+    css: {
+        loaderOptions: {
+            css: {},
+            postcss: {
+                plugins: [
+                    require('postcss-px2rem')({
+                        remUnit: 75
+                    })
+                ]
+            }
+        }
+    },
     // 修改默认的入口
     pages: {
         index: {

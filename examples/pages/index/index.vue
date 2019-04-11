@@ -37,18 +37,18 @@
     .container
         width: 100%
         min-height: 100vh
-        padding-bottom: 30px
+        padding-bottom: 60px
         background: #f7f7f7
 
         .header
-            width: 375px
-            height: 114px
-            font-size: 14px
+            width: 750px
+            height: 228px
+            font-size: 28px
             font-weight: 300
             color: rgba(255, 255, 255, 1)
-            line-height: 18px
+            line-height: 36px
             /*background: #3683d6*/
-            border-radius: 0 0 10px 10px
+            border-radius: 0 0 20px 20px
             box-shadow: 0 4px 20px 0 rgba(0, 49, 107, 0.3)
             box-sizing: border-box
 
@@ -56,25 +56,25 @@
                 position: absolute
                 top: 0
                 left: 0
-                width: 375px
-                height: 114px
+                width: 750px
+                height: 228px
                 z-index: 1
 
             .header-desc
                 position: absolute
                 z-index: 2
-                font-size: 14px
-                margin: 30px 0 0 30px
-                line-height: 24px
+                font-size: 28px
+                margin: 60px 0 0 60px
+                line-height: 48px
 
                 .header-name
-                    font-size: 16px
+                    font-size: 32px
 
 
         .main
             display: flex
             flex-wrap: wrap
-            width: 345px
+            width: 690px
             margin: 0 auto
             flex-direction: row
             justify-content: space-between

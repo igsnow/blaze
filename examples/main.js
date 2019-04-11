@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import 'lib-flexible'
 // 导入组件库
 import BlazeUI from '../lib/blaze.umd'
 import '../lib/blaze.css'

@@ -11,6 +11,8 @@
     "lib": "vue-cli-service build --target lib --name blaze --dest lib src/index.js"
   },
   "dependencies": {
+    "lib-flexible": "^0.3.2",
+    "postcss-px2rem": "^0.3.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
