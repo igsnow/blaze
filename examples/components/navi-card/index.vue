@@ -1,6 +1,6 @@
 <template>
     <div class="navi-card">
-        <image class="navi-icon" :src="icon"/>
+        <img class="navi-icon" :src="icon"/>
         <span>{{title}}</span>
     </div>
 </template>
@@ -23,7 +23,7 @@
 
 <style lang="stylus" scoped>
     .navi-card
-        width: 175px
+        width: 165px
         height: 120px
         background: rgba(255, 255, 255, 1)
         box-shadow: 0 4px 10px 0 rgba(9, 36, 66, 0.04)
