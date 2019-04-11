@@ -1,54 +1,39 @@
 <template>
-    <button
-            class="bl-btn"
-            :type="type"
-            :size="size"
-            :class="btnClass"
-            @click="handleClick">
-        <i :class="icon" v-if="icon"></i>
-        <slot></slot>
-    </button>
+    <div>11111</div>
 </template>
 <script>
     const COMPONENT_NAME = 'bl-button'
     export default {
         name: COMPONENT_NAME,
         props: {
-            icon: {
+            name: {
                 type: String,
-                default: ''
-            },
-            active: {
-                type: Boolean,
-                default: false
-            },
-            inline: {
-                type: Boolean,
-                default: false
-            },
-            disabled: {
-                type: Boolean,
-                default: false
+                default: 'blaze'
             },
             type: {
                 type: String,
-                default: 'button'
+                default: 'default'
             },
+            plain: Boolean,
             size: {
                 type: String,
-                default: 'large'
-            }
-        },
-        computed: {
-            btnClass() {
-                return {
-                    'bl-btn_active': this.active,
-                    'bl-btn-inline': this.inline,
-                    'bl-btn_disabled': this.disabled,
-                    'bl-btn_medium': this.size == 'medium',
-                    'bl-btn_small': this.size == 'small',
-                    'bl-btn_mini': this.size == 'mini'
-                }
+                value: 'medium',
+            },
+            shape: {
+                type: String,
+                value: 'circle',
+            },
+            disabled: {
+                type: Boolean,
+                value: false,
+            },
+            special: {
+                type: Boolean,
+                value: false,
+            },
+            loading: {
+                type: Boolean,
+                value: false,
             }
         },
         methods: {

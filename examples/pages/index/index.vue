@@ -13,6 +13,7 @@
             >
             </navi-card>
         </div>
+        <bl-button></bl-button>
     </div>
 </template>
 
@@ -47,7 +48,7 @@
             font-weight: 300
             color: rgba(255, 255, 255, 1)
             line-height: 36px
-            /*background: #3683d6*/
+            background: #3683d6
             border-radius: 0 0 20px 20px
             box-shadow: 0 4px 20px 0 rgba(0, 49, 107, 0.3)
             box-sizing: border-box
